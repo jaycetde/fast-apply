@@ -4,25 +4,19 @@ function fastApply(fn, scope, args) {
     
     switch (args ? args.length : 0) {
         case 0:
-            fn.call(scope);
-            break;
+            return scope ? fn.call(scope) : fn();
         case 1:
-            fn.call(scope, args[0]);
-            break;
+            return scope ? fn.call(scope, args[0]) : fn(args[0]);
         case 2:
-            fn.call(scope, args[0], args[1]);
-            break;
+            return scope ? fn.call(scope, args[0], args[1]) : fn(args[0], args[1]);
         case 3:
-            fn.call(scope, args[0], args[1], args[2]);
-            break;
+            return scope ? fn.call(scope, args[0], args[1], args[2]) : fn(args[0], args[1], args[2]);
         case 4:
-            fn.call(scope, args[0], args[1], args[2], args[3]);
-            break;
+            return scope ? fn.call(scope, args[0], args[1], args[2], args[3]) : fn(args[0], args[1], args[2], args[3]);
         case 5:
-            fn.call(scope, args[0], args[1], args[2], args[3], args[4]);
-            break;
+            return scope ? fn.call(scope, args[0], args[1], args[2], args[3], args[4]) : fn(args[0], args[1], args[2], args[3], args[4]);
         default:
-            fn.apply(scope, args);
+            return fn.apply(scope, args);
     }
     
 }
