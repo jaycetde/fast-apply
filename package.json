@@ -1,0 +1,17 @@
+{
+  "name": "fast-apply",
+  "version": "0.0.0",
+  "description": "Apply an array of arguments... faster",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayceTDE/fast-apply.git"
+  },
+  "keywords": [
+    "apply",
+    "fast",
+    "faster"
+  ],
+  "author": "Jayce Pulsipher <jaycemp@gmail.com>",
+  "license": "MIT"
+}
