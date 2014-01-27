@@ -1,6 +1,6 @@
 {
   "name": "fast-apply",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Apply an array of arguments... faster",
   "main": "index.js",
   "repository": {
@@ -13,10 +13,10 @@
     "faster"
   ],
   "devDependencies": {
-      "benchmark": "*"
+    "benchmark": "*"
   },
   "scripts": {
-      "test": "node ./benchmark/fastApply.js"
+    "test": "node ./benchmark/fastApply.js"
   },
   "author": "Jayce Pulsipher <jaycemp@gmail.com>",
   "license": "MIT"
