@@ -12,6 +12,12 @@
     "fast",
     "faster"
   ],
+  "devDependencies": {
+      "benchmark": "*"
+  },
+  "scripts": {
+      "test": "node ./benchmark/fastApply.js"
+  },
   "author": "Jayce Pulsipher <jaycemp@gmail.com>",
   "license": "MIT"
 }
